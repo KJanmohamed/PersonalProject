@@ -3,28 +3,33 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
 <style>
-body {font-family:'Lato';}
-ul {
+body {font-family:'Lato'; font-family: 'Alata', sans-serif;}
+
+#navbar {
   list-style-type: none;
-  margin: 0;
-  padding: 0px;
+  margin: 1;
+  padding: 0;
   overflow: hidden;
-  background-color: #57AB3A;
+  background-color: #2196F3;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
 }
-li {
+
+#navbar li {
   float: left;
 }
-li a {
+#navbar li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
-  padding: 18px 20px;
+  padding: 18px 126.4px;
   text-decoration: none;
 }
-li a:hover {
-  background-color: #2D67C8;
+#navbar li a:hover {
+  background-color: #fff;
 }
 .active {
   background-color: #57AB3A;
@@ -48,12 +53,12 @@ li a:hover {
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
-  background-color: #57AB3A;
+  background-color: #fff;
 	justify-content: center;
   padding: 25px 16px
 }
 .flex-container > div {
-  background-color: #333;
+  background-color: #57AB3A;
   height: 200px;
   width: 200px;
   margin: 10px;
@@ -63,6 +68,10 @@ li a:hover {
   padding: 25px 16px
 }
 
+.resize {
+    width: 400px;
+    height: auto;
+}
 #header {
 	text-align:center;
 	font-size: 30px;
@@ -80,64 +89,109 @@ li a:hover {
 }
 #text {
 	text-align:center;
+  color: #fff;
+  padding: 25px 16px
+  font-size: 15px;
+  width: 1300px;
+}
+
+#text1 {
+  text-align:center;
   color: #333;
   padding: 25px 16px
+  font-size: 15px;
+  width: 1300px;
 }
 
 #phototext {
   color: #f1f1f1;
   padding: 25px 16px
 }
+#BulletList {
+  background-color:#03FE7D;
+  text-align:center;
+  padding-bottom: 10px
+}
+#Lines {
+  line-height:40px;
+}
+
 </style>
 </head>
 <body>
-<ul>
+
+<ul id="navbar">
   <li><a class="active" href=""> LINK TO CODE </a></li>
 
-  <li><a href=""> MORE CLIMATE CHANGE </a></li>
+  <li><a class="active" href=""> LINK TO CODE </a></li>
 
-  <li style="float:right"><a href="#contact"> EV TOP 10 </a></li>
+  <li ><a class="active" href="#contact"> EV TOP 10 </a></li>
 
-  <li style="float:right"><a href="#contact"> TESLA MODEL 3 </a></li>
-
-  <li style="float:right"><a href="#contact"> NISSAN LEAF </a></li>
-
-  <li style="float:right"><a href="#contact"> PORSCHE TAYCAN </a></li>
+  <li ><a class="active" href="#contact"> TESLA MODEL 3 </a></li>
   
 </ul>
 
 <div class="container">
-  <img src="https://www.tesla.com/sites/default/files/images/roadster/roadster-social.jpg" alt="Snow" style="width:100%;">
+  <img src="https://www.tesla.com/sites/default/files/images/roadster/roadster-social.jpg" alt="Snow" style="width:10px height=0px";>
   <div class="centered"> TITLE </div>
 </div>
 
 <!-- CLIMATE CHANGE -->
 
 <p id="header" > CLIMATE CHANGE </p>
-<p id="text" > TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT  </p>
+
+<center>
+<p id="text1" > Climate change is defined as a long-term shift in global or regional climate patterns, however, when occurring naturally this is a slow process that has taken place over hundreds and thousands of years. The influence of human activity on this natural cause has led to a much faster rate, and it's only increasing. One main aspect of climate change is global warming, the long-term heating of the Earth’s climate system. The main contributor to this would be GreenHouse Gas (GHG) emissions. Carbon dioxide (CO2) and other greenhouse gases act like a blanket, absorbing IR radiation and preventing it from escaping into outer space. Over the last century, the burning of fossil fuels, including gasoline, has increased the concentration of atmospheric carbon dioxide (CO2), accounting for about two-thirds of GHGs. Cars and trucks collectively account for nearly one-fifth of all US emissions, emitting 24 pounds of carbon dioxide and other global-warming gases for every gallon of gas.<sub>1 </sub>Climate change cannot be solved all together, however there are ways to mitigate the amount of emissions. The solution is electric powered vehicles, such as the Tesla model 3.
+  </p>
+</center>
+
+
+<ul id = "BulletList" style="list-style-type:none;">
+<center>
+  <li id="Lines"> 2.1 billion people have gained access to improved water sanitation since 1990. 
+ </li>
+
+  <li id="Lines"> 663 million people are still without water sanitation. This is roughly one out of every 10 people on the planet.</li>
+
+  <li id="Lines"> Due to bad economics or poor infrastructure, millions of people including children die every year from diseases associated with inadequate water supply, sanitation and hygiene. </li>
+
+  <li id="Lines"> Each day, nearly 1,000 children die due to preventable water and sanitation-related diarrheal diseases.
+ </li>
+
+  <li id="Lines"> Each day, nearly 1,000 children die due to preventable water and sanitation-related diarrheal diseases.
+ </li>
+
+  <li id="Lines"> By 2050, it is projected that at least one in four people will be affected by recurring water shortages.
+ </li>
+
+  <li id="Lines"> Only 3 percent of the world’s water is fresh water, and two-thirds of that is tucked away in frozen glaciers or otherwise unavailable for our use. </li>
+</center>
+</ul>
+
 
 <!-- PHOTOS -->
 
-<div class="flex-container">
-	<div> 1 PHOTO
-  		<image src="/w3images/bandmember.jpg"style="width:60%"> </image>
-  	<p id="phototext" > text </p>
-	</div>
-  <div> 2 PHOTO 
-  	<img src="/w3images/bandmember.jpg"style="width:60%">
-  	<p id="phototext" > text </p>
-  </div>
+<p id="header"> DATA SETS </p>
 
-  <div> 3 PHOTO 
-  	<img src="/w3images/bandmember.jpg"style="width:60%">
-  	<p id="phototext" > text </p>
-  </div>
-</div>
-
+<p id="text1"> Figure 1 </p>
+  <center>
+    <img src="https://climate.nasa.gov/system/content_pages/main_images/203_co2-graph-061219.jpg"style="width:30%">
+    <img src="https://climate.nasa.gov/system/content_pages/main_images/203_co2-graph-061219.jpg"style="width:30%">
+    <img src="https://climate.nasa.gov/system/content_pages/main_images/203_co2-graph-061219.jpg"style="width:30%">
+  </center>
+<!--<p id="text1"> Figure 1 </p>
+  <center>
+    <img src="https://climate.nasa.gov/system/content_pages/main_images/203_co2-graph-061219.jpg"style="width:20%">
+  </center>
+<p id="text1"> Figure 1 </p>
+  <center>
+    <img src="https://climate.nasa.gov/system/content_pages/main_images/203_co2-graph-061219.jpg"style="width:20%">
+  </center>
+-->
 <!-- CARS -->
 
 <p id="header" > CAR INFORMATION </p>
-<p id="text" > TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT  </p>
+<p id="text1" > TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT  </p>
 
 <!-- PHOTOS -->
 
@@ -161,28 +215,37 @@ li a:hover {
 <!-- CALCULATOR --> 
 
 <p id="header" > CALCULATOR </p>
-<p id="text" > TEXT </p>
+<p id="text1" > TEXT </p>
+<center>
+<body >
+            <h1 id="uid"></h1>
 
-<p id="text" > 
+            <input type="text" style= "font-size: 15px;" style="font-family:'Alata';"id="radius" value="Enter your radius here...">
 
+            <button onclick="setData()"> Calculate Area of Circle </button>
 
+            <!-- <button onclick="getData()">Get data</button> -->
+            
+            <p id="Area"></p>
 
+            <div id="info"></div>
 
-
-
-
-
-
-
-
-
-
- </p>
-
-
-
-
-
+            
+    </body>
+    
+  
+    <script>
+       
+       // HERE IS THE FUNCTION TO SHOW HOW TO SET/OVERWRITE USER DATA
+        function setData() {
+          
+          var x = document.getElementById("radius").value;
+          document.getElementById("Area").innerHTML = x * x * 3.14;
+           
+        }
+        
+    </script>
 
 </body>
+</center>
 </html>
